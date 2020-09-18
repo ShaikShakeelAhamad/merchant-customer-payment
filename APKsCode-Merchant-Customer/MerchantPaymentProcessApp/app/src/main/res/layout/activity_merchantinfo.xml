@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="false">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingTop="16dp"
+        android:paddingRight="16dp"
+        tools:context=".MerchantInfo">
+
+        <TextView
+            android:id="@+id/merchantc_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Merchant Information"
+            android:textColor="#042A49"
+            android:textSize="24sp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0"/>
+
+        <TextView
+            android:id="@+id/mer_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Merchant ID: MER345649"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Merchant Name: MerchantB"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/maddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Address: Shop No 123, Complex A, City B"
+            android:textColor="#045307"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/beginNFCPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#8BC34A"
+            android:layout_marginTop="10dp"
+            android:onClick="payBill"
+            android:text="Initiate NFC Payment"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
